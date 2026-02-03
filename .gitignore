@@ -1,0 +1,36 @@
+# MATLAB生成文件
+*.asv
+*.m~
+*.mex*
+*.mlappinstall
+*.mltbx
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE配置
+.vscode/
+.idea/
+
+# 大型数据文件（LVM原始数据）
+*.lvm
+data/
+
+# MAT文件（数据文件太大，超过GitHub 100MB限制）
+*.mat
+
+# FieldTrip工具箱（太大，建议用户单独下载）
+fieldtrip/
+
+# 日志文件
+*.log
+
+
