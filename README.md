@@ -181,6 +181,40 @@ results = process_mission1(file_path, config, 'SaveResults', true);
 
 *左：AEF单试次波形（前10个试次）；右：ASSR单试次波形（显示89Hz稳态振荡）*
 
+### FieldTrip 集成演示
+
+本项目支持与FieldTrip工具箱的无缝集成，提供高级分析功能。
+
+#### PSD对比与时间锁定分析
+
+<p align="center">
+  <img src="outputs/fieldtrip_demo/fieldtrip_psd_comparison.png" width="80%" alt="FieldTrip PSD">
+</p>
+
+*左：原始数据（蓝）vs FieldTrip处理后（红）的PSD对比，50/100Hz工频噪声被成功去除；右：FieldTrip总平均响应*
+
+#### 脑地形图可视化
+
+<p align="center">
+  <img src="outputs/fieldtrip_demo/fieldtrip_topoplot.png" width="50%" alt="FieldTrip Topoplot">
+</p>
+
+*使用ft_topoplotER生成的80-120ms时间窗脑地形图，显示空间分布特征*
+
+#### 自定义实现 vs FieldTrip 对比
+
+<p align="center">
+  <img src="outputs/fieldtrip_demo/fieldtrip_vs_custom.png" width="80%" alt="Custom vs FieldTrip">
+</p>
+
+*自定义实现与FieldTrip处理结果的对比，相关系数 r = 0.9390，验证了自定义实现的正确性*
+
+运行FieldTrip演示：
+```matlab
+setup_paths
+demo_fieldtrip_integration
+```
+
 ---
 
 ## 项目结构
